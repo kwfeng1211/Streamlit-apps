@@ -15,7 +15,7 @@ for i in range(100):
     bar.progress(i + 1)  # barをi+1の形に進む
     time.sleep(0.1)  # 止まる時間の設定するコマンド
 
-"完成！！"
+"完成！！！"
 
 # text = st.sidebar.text_input('あなたの趣味をおしえてください')
 # condition = st.sidebar.slider("あなたの調子は", 0, 100, 50)  # .sidebar左で表現するサイドバー
