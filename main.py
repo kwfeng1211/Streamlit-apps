@@ -5,7 +5,7 @@ st.title("Streamlit 超入門")
 
 # st.write("DataFrame")
 st.write("プレグレスバーの表示")
-"Start!!"
+"Start!!!"
 
 latest_iteration = st.empty()  # 空を用意して
 bar = st.progress(0)  # barを走る
