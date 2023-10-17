@@ -112,7 +112,7 @@ threshold = st.sidebar.slider("登録者数の閾値", 5000, 100000, 50000)
 st.write("### 選択中のパラメータ")
 st.markdown(f"""
 - 検索クリエ: {query}, 
-- 登録社数の閾値: {threshold},
+- 登録者数の閾値: {threshold},
 """)
 
 
