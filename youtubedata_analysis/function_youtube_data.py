@@ -29,8 +29,8 @@ def video_search(youtube, q="python 自動化", max_results=20):
 
         items_id = []
         items = search_response["items"]
-        for item in items:  # for分で下のようにビデオ一個取ったら下のIDとチャンネルも取る文章
-            item_id = {}  # これは辞書型を
+        for item in items:
+            item_id = {}
             item_id["video_id"] = item["id"]["videoId"]
             item_id["channel_id"] = item["snippet"]["channelId"]
             items_id.append(item_id)
@@ -58,7 +58,6 @@ def get_results(df_video, threshold=20000):
             subscriber = {}
             if len(item["statistics"]) > 0:
                 subscriber["channel_id"] = item["id"]
-                # print(item,len(item["statistics"]))#中に取れっているものを確認だけ。
                 subscriber["subscriber_count"] = int(
                     item["statistics"]["subscriberCount"])
             else:
@@ -130,8 +129,8 @@ video_field = st.empty()
 video_field.write("こちらに動画が表示されます")
 
 if st.button("ビデオ表示"):
-    if len(video_id) > 0:  # ここはvideo_idの変数がもし1文字以上でしたらの設定。
+    if len(video_id) > 0:
         try:
-            video_field.video(url)  # videoを表示するプログラム
+            video_field.video(url)
         except:
             st.error("何がエラーが起きているようです。")
