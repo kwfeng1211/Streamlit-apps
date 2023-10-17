@@ -107,7 +107,7 @@ st.sidebar.write("### クリエの入力")
 query = st.sidebar.text_input("検索クリエを入力してください", "Python自動化")
 
 st.sidebar.write("### 閾値の設定")
-threshold = st.sidebar.slider("登録者数の閾値", 5000, 100000, 50000)
+threshold = st.sidebar.slider("登録者数の閾値", 0, 4000000, 2000000)
 
 st.write("### 選択中のパラメータ")
 st.markdown(f"""
